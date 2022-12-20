@@ -20,20 +20,36 @@
     grid-template-rows: 2fr 3fr;
 }
 
+#cheesus {
+    border-radius:50%;
+    height: 80px;
+}
+
+.icon {
+    height: 45px;
+}
+
+span {
+    width: 20%;
+}
+
 input[type="text"] {
     border-radius: 12px;
-    
+    width: 40%;
+    height: 1.8rem;
 }
 
 input::placeholder {
     color: orange;
+    font-weight: bold;
 }
 
 .upperbar1 {
     grid-row: 1 / 2;
     display: flex;
-    align-content: center;
-
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
 }
 
 .upperbar2 {
