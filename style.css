@@ -1,7 +1,3 @@
-.toplist, .bottomlist {
-    list-style: none;
-}
-
 .container {
     font-family: 'Montserrat Alternates', sans-serif;
     display: grid;
@@ -14,6 +10,11 @@
     grid-row: 1 / 3;
     background-color:rgb(199, 99, 5);
 }
+
+.toplist, .bottomlist {
+    list-style: none;
+}
+
 
 .upperbarcontainer {
     display: grid;
