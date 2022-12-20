@@ -1,3 +1,8 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}  
+
 .container {
     font-family: 'Montserrat Alternates', sans-serif;
     display: grid;
@@ -6,9 +11,18 @@
 }
 
 .dashboard {
+    font-size: 20px;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     background-color:rgb(199, 99, 5);
+}
+
+.dashboard > h1,
+.toplist > li,
+.bottomlist > li {
+    display: flex;
+    align-items: center;
+    margin: 15px;
 }
 
 .toplist, .bottomlist {
@@ -19,24 +33,33 @@
 .upperbarcontainer {
     display: grid;
     grid-template-rows: 2fr 3fr;
+    grid-template-columns: 6fr 4fr;
+    background-color: rgb(255, 216, 168);
 }
 
-#cheesus {
+#cheesus1 {
+    border-radius:50%;
+    height: 60px;
+}
+
+#cheesus2 {
     border-radius:50%;
     height: 80px;
 }
 
-.icon {
-    height: 45px;
+.pizzaicon {
+    height: 55px;
+    margin: 15px;
 }
 
-span {
-    width: 20%;
+.dashicon, .icon {
+    height: 30px;
+    margin: 15px;
 }
 
 input[type="text"] {
     border-radius: 12px;
-    width: 40%;
+    width: 100%;
     height: 1.8rem;
 }
 
@@ -45,23 +68,72 @@ input::placeholder {
     font-weight: bold;
 }
 
-.upperbar1 {
+.searchcontainer {
     grid-row: 1 / 2;
+    grid-column: 1 / 2;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 10px;
+    justify-content: flex-start;
 }
 
-.upperbar2 {
+.rightofsearch {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.imagegreeting {
     grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    gap: 1.5rem;
+}
+
+.greetingtwolines {
+    display: flex;
+    flex-direction: column;
+}
+
+.greetingtwolines > p,
+.greetingtwolines > h1 {
+    margin: 0;
+}
+
+.rightofgreeting {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.rightofgreeting > p {
+    border-radius: 18px;
+    padding: 10px 30px;
+    border: 2px solid black;
+    background-color: rgb(252, 142, 16);
+}
+
+.projandsides {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 15px
 }
 
 .projects {
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
+    gap: 2rem;
 }
 
 .card p {
@@ -70,10 +142,18 @@ input::placeholder {
     padding: 5px;
     font-size: 18px;
 }
+
+.card {
+    border: 1px solid black;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
   
 .card .title {
     font-size: 18px;
-    text-align: center;
 }
 
 .announcements {
