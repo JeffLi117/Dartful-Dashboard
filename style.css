@@ -126,14 +126,22 @@ input::placeholder {
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 4% 1fr;
     padding: 15px
+}
+
+.projandsides > h2 {
+    grid-row: 1 / 2;
+    display: flex;
+    padding-left: 1rem;
 }
 
 .projects {
     grid-column: 1 / 2;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
     gap: 2rem;
+    padding: 1rem;
 }
 
 .card p {
@@ -151,6 +159,7 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     height: auto;
+    padding: 2rem 0.7rem;
 }
   
 .card .title {
@@ -164,12 +173,19 @@ input::placeholder {
     justify-content: flex-end;
 }
 
-.announcements {
+.rightsidegrid {
     grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.announcements {
+    grid-row: 1 / 2;
     display: grid;
 }
 
 .trending {
-    grid-column: 2 / 3;
+    grid-row: 2 / 3;
     display: grid;
 }
